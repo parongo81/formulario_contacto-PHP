@@ -1,0 +1,71 @@
+body{
+  background-color: rgb(235, 234, 234);
+}
+.body{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(203, 200, 200, 0);
+  width: 90vw;
+  &__titulo{
+    width: 90%;
+    font-size: 25px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(254, 162, 5);
+    border: 4px solid rgb(0, 0, 0) ;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: white;
+  }
+  &__form{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
+    border: 4px solid rgb(0, 0, 0) ;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: none;
+    background-color: rgb(191, 186, 186);
+    &__contenedor{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5px;
+      width: 95%;
+      &__label{
+        color: rgb(72, 70, 70);
+        padding: 5px 3px;
+        font-weight: 600;
+      }
+      &__input{
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        
+      }
+    }
+    &__submit{
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      width: 200px;
+      padding: 5px;
+      background-color: rgb(254, 162, 5);
+      color: white;
+    }
+    &__errores{
+      margin-top: 20px;
+    }
+  }
+}
+
